@@ -33,12 +33,6 @@
 
         <hr>
 
-        <!-- <select class="my_select_box" data-placeholder="Select Your Options">
-            <option value="1">Option 1</option>
-            <option value="2" selected>Option 2</option>
-            <option value="3" disabled>Option 3</option>
-          </select> -->
-
         <h3><strong>Question 1</strong></h3>
         <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
         <select class="chosen-select" id="q1">
@@ -167,7 +161,7 @@
         <footer class="footer">
             <div class="container">
                 <p><a href="/api/friends">API Friends List</a> | <a
-                        href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+                        href="https://github.com/rayhe921/friend-finder">GitHub Repo</a></p>
             </div>
         </footer>
 
@@ -195,12 +189,6 @@
             ]
             };
 
-            // console.log("New Entry " + newFriend);
-
-            // This line is the magic. It"s very similar to the standard ajax function we used.
-            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-            // depending on if a tables is available or not.
 
             $.post("/api/friends", newFriend,
                 function (data) {
